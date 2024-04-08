@@ -1,0 +1,769 @@
+.header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info .header-info-logo {
+    display: flex;
+    width: 35%;
+}
+
+.header-info .header-info-logo span {
+    border: 1px solid rgba(63, 63, 63, 0.20);
+    height: 50%;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.header-info .header-info-logo p,
+.header-info .header-info-location p {
+    font-size: 14px;
+    align-self: center;
+}
+
+.header-info .header-info-location {
+    display: flex;
+    width: 17%;
+}
+
+.header-info .header-info-location img {
+    border: 6px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.08);
+    margin-right: 16px;
+}
+
+.header-info .header-info-contacts {
+    display: flex;
+    width: 21%;
+    padding: 11px 26px 0 13px;
+    box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.08);
+    border-radius: 673px
+}
+
+.header-info .header-info-ring-icon {
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #E21F4D;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+.header-info .header-info-contacts .contact {
+    font-size: 20px;
+    color: #767676;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.main-header {
+    position: relative;
+    display: flex;
+    position: relative;
+    gap: 18px;
+    padding-bottom: 60px;
+}
+
+.main-header-person {
+    width: 42%;
+}
+
+.main-header-person .images img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-header-person .circles-image {
+    z-index: -3 !important;
+    top: -10% !important;
+    left: -35% !important;
+}
+
+.main-header-person .person-image {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    transform: translateX(-100%);
+    z-index: -1;
+    top: 5.5% !important;
+    left: -3% !important;
+}
+
+.main-header-person .handwriting-image {
+    top: 85% !important;
+    left: 31.5% !important;
+}
+
+.clinic-rating {
+    position: absolute;
+    top: 22% !important;
+    left: -4.5% !important;
+}
+
+.clinic-rating .rate .rate-word {
+    margin-top: 14%;
+}
+
+.clinic-rating .rate {
+    display: flex;
+    align-items: center;
+}
+
+.clinic-rating .rate span {
+    color: #E21F4D;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.main-header-person .clinic-rating .top-number {
+    z-index: -2;
+    background: linear-gradient(130deg, #E21F4D 0%, #981433 100%);
+    font-size: 165px;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clinic-rating .rate .rate-description {
+    font-size: 19px;
+    font-weight: 600;
+    width: 30%;
+}
+
+.person-info {
+    z-index: 1 !important;
+    position: absolute;
+    top: 71% !important;
+    left: 12% !important;
+}
+
+.person-name {
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    display: flex;
+    gap: 11px;
+    width: fit-content;
+    padding: 10px 19px;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+}
+
+.person-name p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #E21F4D;
+}
+
+.person-name span {
+    display: inline-block;
+    padding-left: 6%;
+    width: 26px;
+    height: 26px;
+    box-shadow: 0px 13px 24px rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+}
+
+.mobile-description {
+    display: none;
+}
+
+.person-quote p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    width: fit-content;
+    display: block;
+    background-color: white;
+}
+
+.person-quote p:nth-child(1) {
+    padding: 7px 23px;
+    border-radius: 5px 5px 5px 0;
+}
+
+.person-quote p:nth-child(2) {
+    padding: 0px 10px 7px 23px;
+    border-radius: 0 0 5px 0px;
+}
+
+.person-quote p:nth-child(3) {
+    padding: 0px 10px 7px 23px;
+    border-radius: 0 0 5px 5px;
+    color: #969696;
+    font-size: 11px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.main-header-info {
+    width: 57%;
+    padding-top: 79px;
+}
+
+.main-header-info h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.main-header-info .info-block {
+    margin-left: 57px;
+}
+
+.main-header-info .description {
+    margin-top: 41px;
+    width: 69%;
+    font-size: 18px;
+}
+
+.main-header-info b {
+    font-weight: 700;
+}
+
+.main-header-info span {
+    color: #E21F4D;
+}
+
+.info-block .services {
+    position: relative;
+    display: flex;
+    padding: 22px 28px;
+    gap: 26px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 11.963635444641113px 46.145450592041016px rgba(0, 0, 0, 0.08);
+    border-radius: 10px
+}
+
+.services .teeth-icon {
+    align-self: center;
+}
+
+.info-block .services .service-info {
+    font-size: 13px;
+}
+
+.info-block .services .service-info p {
+    margin-bottom: 10px;
+}
+
+.info-block .services .service-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.about-service-button {
+    position: absolute;
+    align-self: center;
+    left: 95%;
+    width: 55px;
+}
+
+@media (max-width: 1279px) {
+
+    .header-info .header-info-logo p,
+    .header-info .header-info-location p {
+        font-size: 13px;
+        align-self: center;
+    }
+
+    .header-info .header-info-contacts .contact {
+        font-size: 18px;
+    }
+
+    .clinic-rating {
+        position: absolute;
+        top: 22% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .clinic-rating .top-number {
+        font-size: 147px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 17px;
+    }
+
+    .main-header-info h1 {
+        font-size: 52px;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 17px;
+    }
+
+    .main-header-info .description {
+        width: 67%;
+        font-size: 16px;
+    }
+
+    .info-block .services .service-info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1096px) {
+
+    .header-info .header-info-logo p,
+    .header-info .header-info-location p {
+        font-size: 9px;
+        align-self: center;
+    }
+
+    .header-info .header-info-contacts .contact {
+        font-size: 15px;
+    }
+
+    .clinic-rating {
+        position: absolute;
+        top: 22% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .clinic-rating .top-number {
+        font-size: 147px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 17px;
+    }
+
+    .main-header-info h1 {
+        font-size: 45px;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 13px;
+    }
+
+    .info-block .services .service-info {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 959px) {
+    header {
+        background-image: none;
+        background: #FDFDFD;
+    }
+
+    .header-info {
+        position: relative;
+    }
+
+    .header-info .header-info-logo span {
+        display: none;
+    }
+
+    .header-info .header-info-logo p,
+    .header-info .header-info-location p {
+        display: none;
+    }
+
+    .header-info .header-info-location {
+        display: none;
+    }
+
+    header .contact-block {
+        display: none;
+    }
+
+    .header-info .header-info-contacts {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+        margin-right: 35px;
+    }
+
+    .header-info .header-info-ring-icon {
+        padding-top: 6px;
+        background-color: white;
+        box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.08);
+        border-radius: 50%;
+        margin-top: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        left: 97%;
+        display: flex;
+        flex-direction: column;
+        height: 30px;
+        padding-top: 7px;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 4px;
+        background: black;
+    }
+
+    .main-header {
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .main-header-info {
+        z-index: 2;
+    }
+
+    .main-header-info h1 {
+        width: 100%;
+        font-size: 46px;
+    }
+
+    .main-header div {
+        width: 100%;
+    }
+
+    .main-header-person {
+        z-index: 2;
+    }
+
+    .main-header-info .info-block {
+        margin-left: 0;
+    }
+
+    .main-header-info .description {
+        font-size: 30px;
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 60%;
+    }
+
+    .main-header-person .circles-image {
+        width: 100%;
+        top: 33% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .person-image {
+        width: 40%;
+        top: 39% !important;
+        left: 30% !important;
+    }
+
+    .person-quote {
+        display: none;
+    }
+
+    .main-header-person .handwriting-image {
+        display: none;
+    }
+
+    .person-info {
+        top: 56% !important;
+        left: 38% !important;
+    }
+
+    .clinic-rating {
+        position: absolute;
+        top: 42% !important;
+        left: 20% !important;
+    }
+
+    .clinic-rating .rate .rate-word {
+        margin-top: 5%;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 12px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        width: 15%;
+    }
+
+    .mobile-description {
+        padding-left: 3%;
+        display: block;
+    }
+
+    .mobile-description p {
+        font-size: 13px;
+        color: rgba(63, 63, 63, 0.50) !important;
+        font-weight: 600;
+    }
+
+    .info-block .services {
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 22px 28px;
+        gap: 26px;
+        width: 70%;
+        background-color: white;
+        margin-top: 40px;
+    }
+
+    .info-block .services .teeth-icon {
+        position: absolute;
+        top: -15%;
+        left: 45%;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 29px;
+    }
+
+    .about-service-button {
+        top: 40%;
+        left: 95%;
+    }
+
+    .info-block .services .service-info {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header-info .description {
+        font-size: 25px;
+    }
+
+    .clinic-rating {
+        top: 42% !important;
+        left: 30% !important;
+    }
+
+    .clinic-rating .rate .rate-word {
+        margin-top: 3%;
+    }
+
+    .clinic-rating .rate span {
+        font-size: 13px;
+    }
+
+    .main-header-person .clinic-rating .top-number {
+        font-size: 62px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 10px;
+    }
+
+    .clinic-rating .rate .rate-description img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .main-header-person .circles-image {
+        width: 100%;
+        top: 31% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .person-image {
+        width: 40%;
+        top: 36% !important;
+        left: 30% !important;
+    }
+
+    .person-info {
+        top: 53% !important;
+        left: 35% !important;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 23px;
+    }
+
+    .info-block .services .service-info {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 639px) {
+    .main-header-info h1 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .main-header-info .description {
+        font-size: 18px;
+    }
+
+    .clinic-rating {
+        top: 40% !important;
+        left: 26% !important;
+    }
+
+    .clinic-rating .rate .rate-word {
+        margin-top: 3%;
+    }
+
+    .clinic-rating .rate span {
+        font-size: 13px;
+    }
+
+    .main-header-person .clinic-rating .top-number {
+        font-size: 62px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 10px;
+    }
+
+    .clinic-rating .rate .rate-description img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .main-header-person .circles-image {
+        width: 100%;
+        top: 31% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .person-image {
+        width: 40%;
+        top: 36% !important;
+        left: 30% !important;
+    }
+
+    .person-info {
+        top: 49% !important;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 15px;
+    }
+
+    .info-block .services .service-info {
+        font-size: 13px;
+    }
+
+    .info-block .services .service-info button {
+        font-size: 10px;
+    }
+
+    .about-service-button {
+        top: 30%;
+        left: 95%;
+    }
+
+    .person-name {
+        padding: 4px 8px;
+    }
+
+    .person-name p {
+        font-size: 12px;
+    }
+
+    .person-name span img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .person-name span {
+        padding-left: 2%;
+        width: 19px;
+        height: 19px;
+    }
+
+    .mobile-description p {
+        font-size: 10px;
+    }
+
+    .info-block .services .teeth-icon {
+        top: -20%;
+        left: 45%;
+    }
+}
+
+@media (max-width: 479px) {
+    .main-header-info h1 {
+        font-size: 27px;
+    }
+
+    .main-header-info .description {
+        font-size: 13px;
+    }
+
+    .clinic-rating {
+        top: 40% !important;
+        left: 19% !important;
+    }
+
+    .clinic-rating .rate .rate-description {
+        width: 17%;
+    }
+
+    .clinic-rating .rate .rate-word {
+        margin-top: 3%;
+    }
+
+    .clinic-rating .rate span {
+        font-size: 13px;
+    }
+
+    .main-header-person .clinic-rating .top-number {
+        font-size: 62px;
+    }
+
+    .clinic-rating .rate .rate-description {
+        font-size: 10px;
+    }
+
+    .clinic-rating .rate .rate-description img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .main-header-person .circles-image {
+        width: 100%;
+        top: 30% !important;
+        left: 0% !important;
+    }
+
+    .main-header-person .person-image {
+        width: 40%;
+        top: 36% !important;
+        left: 30% !important;
+    }
+
+    .person-info {
+        top: 49% !important;
+        left: 30% !important;
+    }
+
+    .info-block .services .service-info h2 {
+        font-size: 11px;
+    }
+
+    .info-block .services .service-info {
+        font-size: 9px;
+    }
+
+    .person-name {
+        padding: 4px 8px;
+    }
+
+    .person-name p {
+        font-size: 12px;
+    }
+
+    .mobile-description p {
+        font-size: 10px;
+    }
+
+    .info-block .services .teeth-icon {
+        top: -20%;
+        left: 45%;
+    }
+}

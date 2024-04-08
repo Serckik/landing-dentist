@@ -1,0 +1,178 @@
+.services-block {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.services-block .description {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-list {
+    overflow: auto !important;
+    display: flex;
+    gap: 25px;
+}
+
+.services-item {
+    width: 370px;
+    background: white;
+    box-shadow: 0px 14px 66px rgba(0, 0, 0, 0.10);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service-promo {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #E21F4D 0%, #E21F4D 100%), radial-gradient(68.49% 61.23% at 34.25% 30.61%, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 15px 0px 66px rgba(0, 0, 0, 0.08);
+    margin-bottom: 34px
+}
+
+.service-icon {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.services-item .service-info {
+    padding: 0 31px;
+    margin-bottom: 20px;
+}
+
+.services-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.service-info p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.services-block {
+    position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+.right-arrow {
+    top: 45%;
+    left: 97%;
+}
+
+.left-arrow {
+    top: 45%;
+    left: -2%;
+}
+
+.left-arrow img {
+    transform: rotate(180deg);
+}
+
+.scroll {
+    display: none;
+}
+
+@media (max-width: 959px) {
+    .services-item {
+        width: 179px;
+        margin-bottom: 20px;
+    }
+
+    .services-item .service-info {
+        padding: 0 15px;
+    }
+
+    .service-promo {
+        margin-bottom: 10px;
+    }
+
+    .service-promo img {
+        width: 179px;
+        height: 100%;
+    }
+
+    .services-item h3 {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .service-info p {
+        font-size: 9px;
+        height: 40px;
+    }
+
+    .reservation-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .read-more-button {
+        font-size: 10px;
+    }
+
+    .buttons-block {
+        gap: 12px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        z-index: 2;
+        position: static;
+        display: inline-block;
+        padding-top: 4px;
+    }
+
+    .left-arrow {
+        margin-right: 30px;
+    }
+
+    .scroll {
+        align-self: center;
+        display: block;
+        width: 70%;
+        background: rgb(241, 241, 241);
+        height: 5px;
+        box-shadow: 0px 11.207451820373535px 43.22874069213867px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+    }
+
+    .scroll-dragger {
+        width: 10%;
+        height: 5px;
+        background: #E21F4D;
+        border-radius: 8.01px;
+    }
+}
+
+@media (max-width: 639px) {
+    .services-block .description {
+        font-size: 25px;
+    }
+
+    .scroll {
+        width: 60%;
+    }
+}
+
+@media (max-width: 479px) {
+    .services-block .description {
+        font-size: 19px;
+    }
+
+    .scroll {
+        width: 50% !important;
+    }
+}

@@ -1,0 +1,161 @@
+.staff-block-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.staff-block-label {
+    width: 39%;
+}
+
+.staff-block-info {
+    padding-top: 10px;
+    position: relative;
+    font-size: 18px;
+    width: 37%;
+}
+
+.staff-block-info img {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+}
+
+.staff-list {
+    overflow: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.staff-list-item {
+    width: 33%;
+    padding: 35px 31px;
+    background: white;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.staff-item-info p {
+    margin-bottom: 15px;
+}
+
+.staff-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.staff-item-info p:nth-child(3) {
+    opacity: 0.60;
+    width: 80%;
+}
+
+.staff-list-item button {
+    display: flex;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 1000px;
+    border: 1px #E21F4D solid;
+    color: #E21F4D;
+    font-weight: 600;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    margin-top: auto;
+    width: fit-content;
+}
+
+.staff-list-item button img {
+    width: 23px;
+    height: 23px;
+}
+
+.more-button {
+    width: 195px;
+    height: 54px;
+    display: block;
+    margin: 0 auto;
+}
+
+.staff-block .buttons-block {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    .staff-block-info {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 959px) {
+    .staff-block-info {
+        display: none;
+    }
+
+    .staff-block-label p {
+        font-size: 26px;
+    }
+
+    .staff-list-item {
+        width: 202px;
+        box-shadow: 0px 0px 51.17647171020508px rgba(0, 0, 0, 0.08);
+        border-radius: 3.78px;
+        padding: 9px 15px;
+    }
+
+    .staff-image {
+        width: auto;
+    }
+
+    .staff-name {
+        font-size: 12px;
+    }
+
+    .staff-list-item {
+        font-size: 10px;
+    }
+
+    .staff-list-item button {
+        padding: 7px 40px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .staff-list-item button p {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .staff-list-item button img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .more-button {
+        display: none;
+    }
+
+    .buttons-block {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .staff-block-label {
+        width: 52%;
+    }
+
+    .staff-block-label p {
+        font-size: 16px;
+    }
+
+    .staff-block h2 {
+        padding: 8px 16px;
+    }
+}

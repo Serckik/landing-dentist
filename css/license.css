@@ -1,0 +1,131 @@
+.license-block {
+    position: relative;
+}
+
+.license-image {
+    position: absolute;
+    top: -36%;
+    left: -35%;
+    z-index: -1;
+}
+
+.search-license a {
+    display: flex;
+    align-items: start;
+    gap: 7px;
+    width: 13%;
+    position: absolute;
+    top: 42%;
+    left: 34%;
+    font-size: 11px;
+    color: #8F8F8F;
+}
+
+.license-block-label {
+    margin-bottom: 40px;
+}
+
+.license-block-info {
+    padding-top: 64px;
+    width: 50%;
+    margin-left: auto;
+}
+
+.license-block-info-container {
+    margin-left: 100px;
+}
+
+.license-block-info-container .description {
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.license-proof-flex {
+    gap: 47px;
+    display: flex;
+    font-size: 13px;
+}
+
+.license-proof-flex div {
+    position: relative;
+}
+
+.license-proof-flex img {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+@media (max-width: 1279px) {
+    .license-image {
+        left: -39%;
+    }
+}
+
+@media (max-width: 1096px) {
+    .license-image {
+        left: -50%;
+    }
+}
+
+@media (max-width: 959px) {
+    .license-block-info {
+        width: 100%;
+    }
+
+    .license-block-info-container {
+        margin-left: 0;
+    }
+
+    .license-block-info-container .description {
+        margin-bottom: 262px;
+    }
+
+    .license-image {
+        top: 35%;
+        left: 25%;
+    }
+
+    .search-license a {
+        display: block;
+        position: absolute;
+        width: fit-content !important;
+        top: 55%;
+        left: 5%;
+        font-size: 11px;
+        color: #8F8F8F;
+        width: 16%;
+    }
+
+    .search-license a p:nth-child(2) {
+        display: none;
+    }
+
+    .search-license a p span {
+        color: #E21F4D;
+        font-size: 10px;
+        border-bottom: 1px #E21F4D dotted;
+    }
+}
+
+@media (max-width: 767px) {
+    .license-block-info-container .description {
+        font-size: 11px;
+    }
+
+    .license-proof-flex {
+        font-size: 10px;
+    }
+
+    .license-image {
+        top: 30%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 659px) {
+    .license-image {
+        top: 30%;
+        left: 10%;
+    }
+}

@@ -1,0 +1,211 @@
+.worker-block {
+    display: flex;
+    background-image: url(/public/person-front.png);
+    background-repeat: no-repeat;
+    background-position: 32%;
+}
+
+.worker-info {
+    width: 50%;
+}
+
+.worker-quote {
+    position: relative;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.worker-name {
+    position: relative;
+    font-size: 55px;
+    line-height: 57.75px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.worker-job-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 33px;
+}
+
+.worker-quote-label img,
+.worker-name img {
+    position: absolute;
+    left: -2%;
+}
+
+.worker-quote-info {
+    margin-bottom: 69px;
+}
+
+.worker-quote-info p {
+    font-size: 16px;
+    margin-left: 14%;
+}
+
+.worker-quote-info p:nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.worker-handwrite {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+@media (max-width: 1279px) {
+    .worker-block {
+        background-position: 28%;
+    }
+
+    .worker-block .register-button {
+        width: 50%;
+    }
+
+    .worker-block .register-button p {
+        font-size: 13px;
+    }
+
+    .worker-block .register-button div {
+        width: 80%;
+    }
+
+    .worker-quote-info p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1096px) {
+    .worker-block {
+        background-position: 20%;
+    }
+
+    .worker-block .register-button div {
+        top: 10%;
+        height: 54px;
+    }
+
+    .worker-block .register-button {
+        width: 40%;
+        padding: 17px 42px;
+    }
+
+    .worker-block .register-button p {
+        font-size: 8px;
+    }
+
+    .worker-block .register-button div {
+        width: 80%;
+    }
+
+    .worker-quote-info p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 959px) {
+    .worker-block {
+        background-image: none;
+    }
+
+    .worker-block {
+        flex-direction: column-reverse;
+    }
+
+    .worker-block .register-button p {
+        font-size: 12.28px;
+    }
+
+    .worker-quote {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .worker-info {
+        width: 100%;
+        background-image: url(/public/person-front.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+    }
+
+    .worker-quote-label img,
+    .worker-name img {
+        display: none;
+    }
+
+    .worker-quote-info p {
+        margin-left: 0%;
+    }
+
+    .worker-quote-info p:nth-child(1) {
+        font-weight: 400;
+    }
+
+    .worker-quote-info p:nth-child(2) {
+        display: none;
+    }
+
+    .worker-block .register-button {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .worker-block .register-button div {
+        width: 90%;
+    }
+
+    .worker-handwrite {
+        position: absolute;
+        width: 65px;
+        top: 150%;
+        left: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .main-header .register-button p,
+    .worker-block .register-button p {
+        font-size: 12px;
+    }
+
+    .worker-quote-info p {
+        font-size: 11px;
+    }
+
+    .worker-name p {
+        font-size: 30px;
+        line-height: 31.50px;
+    }
+
+    .worker-name {
+        margin-bottom: 10px;
+    }
+
+    .worker-handwrite {
+        top: 140%;
+        left: 55%;
+    }
+}
+
+@media (max-width: 659px) {
+    .worker-handwrite {
+        top: 141%;
+        left: 46%;
+    }
+}
+
+@media (max-width: 479px) {
+    .worker-quote-label p {
+        font-size: 16px;
+    }
+
+    .worker-handwrite {
+        top: 140%;
+        left: 33%;
+    }
+}
